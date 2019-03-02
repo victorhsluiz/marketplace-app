@@ -42,4 +42,6 @@ routes.post(
 	handle(controllers.PurchaseController.store)
 );
 
+routes.put("/purchases/:id", handle(controllers.PurchaseController.update));
+
 module.exports = routes;
